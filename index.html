@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammed Shadil Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/framer-motion@10/dist/framer-motion.umd.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-black via-[#06060a] to-[#0b0b0f] text-white font-sans">
+
+  <!-- NAVBAR -->
+  <header class="backdrop-blur-sm bg-white/3 border-b border-white/6">
+    <nav class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-white/6 ring-1 ring-white/8 flex items-center justify-center text-xl font-semibold">S</div>
+        <div>
+          <div class="text-lg font-semibold">Muhammed</div>
+          <div class="text-xs text-gray-300">IT Student — 1st Year</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#projects" class="text-sm hover:underline">Projects</a>
+        <a href="#skills" class="text-sm hover:underline">Skills</a>
+        <a href="#contact" class="text-sm hover:underline">Contact</a>
+        <a href="https://github.com/mhmmd.shadil" target="_blank" class="ml-3 inline-flex items-center gap-2 px-3 py-2 rounded-2xl bg-white/4 backdrop-blur-sm border border-white/6">
+          <i data-lucide="github" class="w-4 h-4"></i> GitHub
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-6">
+        <div class="text-sm text-gray-300">Hi, my name is</div>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+          Muhammed Shadil MP
+        </h1>
+        <p class="text-gray-300 max-w-xl">
+          19, IT student who builds clean, fast, Apple-inspired interfaces. Learning full-stack & open-source, one project at a time.
+        </p>
+
+        <div class="flex items-center gap-4">
+          <a href="https://github.com/mhmmdshadil" target="_blank" class="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/6 border border-white/8 hover:translate-y-[-2px] transition-transform">
+            <i data-lucide="github" class="w-4 h-4"></i> View GitHub
+          </a>
+          <a href="mailto:muhammedshadilmp7@gmail.com" class="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-transparent border border-white/8 hover:bg-white/3 transition">
+            <i data-lucide="mail" class="w-4 h-4"></i> Email Me
+          </a>
+        </div>
+
+        <div class="flex items-center gap-3 text-sm text-gray-400">
+          <div class="w-1 h-6 rounded bg-gradient-to-b from-pink-400 to-violet-400"></div>
+          <span>Currently learning: React, Tailwind, UI design patterns.</span>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <div class="w-72 h-72 rounded-3xl bg-gradient-to-tr from-white/3 to-white/5 ring-1 ring-white/6 backdrop-blur-lg flex flex-col items-center justify-center p-6">
+          <img src="https://raw.githubusercontent.com/mhmmdshadil/portfolio-website/main/215467458.jpg" 
+               alt="Profile"
+               class="w-32 h-32 rounded-2xl object-cover shadow-md ring-1 ring-white/8"/>
+          <div class="mt-4 text-center">
+            <div class="font-semibold">Muhammed Shadil MP</div>
+            <div class="text-xs text-gray-300">IT — Government Engineering College Sreekrishnapuram</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mt-16">
+      <h2 class="text-2xl font-bold">Projects</h2>
+      <p class="text-gray-400 mt-2">Highlights from my GitHub and college work.</p>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <a href="#" target="_blank" class="block p-6 rounded-2xl bg-white/3 border border-white/6 backdrop-blur-sm hover:scale-[1.01] transition-shadow">
+          <div class="text-lg font-semibold">Student Result Manager</div>
+          <div class="text-gray-300 text-sm mt-1">Mini console app to store & show student marks with search & sort.</div>
+        </a>
+        <a href="#" target="_blank" class="block p-6 rounded-2xl bg-white/3 border border-white/6 backdrop-blur-sm hover:scale-[1.01] transition-shadow">
+          <div class="text-lg font-semibold">Data Structure Visualizer</div>
+          <div class="text-gray-300 text-sm mt-1">Web UI demonstrating stack, queue and linked list animations.</div>
+        </a>
+        <a href="#" target="_blank" class="block p-6 rounded-2xl bg-white/3 border border-white/6 backdrop-blur-sm hover:scale-[1.01] transition-shadow">
+          <div class="text-lg font-semibold">College Notes Hub</div>
+          <div class="text-gray-300 text-sm mt-1">Notes sharing UI with filters by subject and semester.</div>
+        </a>
+        <div class="p-6 rounded-2xl bg-white/4 border border-white/6 backdrop-blur-sm flex items-center justify-center">
+          <div class="text-center text-gray-300">
+            <div class="font-medium">More coming soon</div>
+            <div class="text-sm mt-1">Connect on GitHub to see updates.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mt-16">
+      <h2 class="text-2xl font-bold">Skills</h2>
+      <p class="text-gray-400 mt-2">Tools and languages I use.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <div class="px-4 py-2 rounded-full bg-white/4 border border-white/6 text-sm">HTML</div>
+        <div class="px-4 py-2 rounded-full bg-white/4 border border-white/6 text-sm">CSS / Tailwind</div>
+        <div class="px-4 py-2 rounded-full bg-white/4 border border-white/6 text-sm">JavaScript</div>
+        <div class="px-4 py-2 rounded-full bg-white/4 border border-white/6 text-sm">React</div>
+        <div class="px-4 py-2 rounded-full bg-white/4 border border-white/6 text-sm">Git & GitHub</div>
+        <div class="px-4 py-2 rounded-full bg-white/4 border border-white/6 text-sm">C</div>
+        <div class="px-4 py-2 rounded-full bg-white/4 border border-white/6 text-sm">Python</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-16">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="text-gray-400 mt-2">Let's build something — reach out or follow me.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white/3 border border-white/6 backdrop-blur-sm">
+          <div class="text-sm text-gray-300">Email</div>
+          <a class="block mt-2 font-medium" href="mailto:muhammedshadilmp7@gmail.com">
+            muhammedshadilmp7@gmail.com
+          </a>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/3 border border-white/6 backdrop-blur-sm">
+          <div class="text-sm text-gray-300">Instagram</div>
+          <a class="block mt-2 font-medium" href="https://www.instagram.com/mhmmd.shadil/" target="_blank">
+            @mhmmd.shadil
+          </a>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/3 border border-white/6 backdrop-blur-sm">
+          <div class="text-sm text-gray-300">GitHub</div>
+          <a class="block mt-2 font-medium" href="https://github.com/mhmmdshadil" target="_blank">
+            mhmmdshadil
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-20 text-center text-gray-400">
+      <div class="flex items-center justify-center gap-4 text-sm">
+        <a href="https://github.com/mhmmdshadil" target="_blank" class="inline-flex items-center gap-2">
+          <i data-lucide="github" class="w-4 h-4"></i> GitHub
+        </a>
+        <a href="https://www.instagram.com/mhmmd.shadil/" target="_blank" class="inline-flex items-center gap-2">
+          <i data-lucide="instagram" class="w-4 h-4"></i> Instagram
+        </a>
+        <a href="mailto:muhammedshadilmp7@gmail.com" class="inline-flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4"></i> Email
+        </a>
+      </div>
+      <div class="mt-6 text-sm">© 2025 Muhammed Shadil MP. Designed with a glassy, iPhone-style UI.</div>
+    </footer>
+  </main>
+
+  <script>lucide.createIcons();</script>
+
+</body>
+</html>
+      
