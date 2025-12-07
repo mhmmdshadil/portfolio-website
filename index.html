@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Muhammed Shadil — Portfolio</title>
-  <meta name="description" content="Muhammed Shadil — IT student (Kerala, India). Minimal, glassy portfolio with links and education details." />
+  <meta name="description" content="Muhammed Shadil — IT student from Kerala, India. Dark, premium portfolio with smooth glassmorphism and clean layout." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <div class="app">
-    <!-- Ambient background (dark + subtle glow) -->
+    <!-- Ambient background -->
     <div class="bg">
       <div class="bg-orb orb1"></div>
       <div class="bg-orb orb2"></div>
+      <div class="bg-orb orb3"></div>
       <div class="bg-noise" aria-hidden="true"></div>
     </div>
 
     <!-- Top bar -->
     <header class="topbar">
       <div class="brand">
-        <div class="mark" aria-hidden="true">⌁</div>
+        <div class="avatar-wrap" aria-hidden="true">
+          <img src="https://raw.githubusercontent.com/mhmmdshadil/portfolio-website/main/215467458.jpg" alt="Portrait of Muhammed Shadil" />
+        </div>
         <div class="brand-text">
-          <div class="name">Muhammed Shadil <span class="tag">MP</span></div>
-          <div class="sub">IT Student · Kerala, India</div>
+          <div class="name">
+            Muhammed Shadil
+            <span class="tag">IT · MP</span>
+          </div>
+          <div class="sub">Building calm, minimal digital spaces</div>
         </div>
       </div>
 
@@ -39,6 +45,7 @@
         <a href="#education" class="nav-link">Education</a>
         <a href="#links" class="nav-link">Links</a>
       </nav>
+
       <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -49,7 +56,7 @@
       <div class="sheet-inner">
         <div class="sheet-head">
           <div class="sheet-title">Navigate</div>
-          <button class="icon-btn" id="closeMenu" aria-label="Close menu">
+          <button class="icon-btn close-btn" id="closeMenu" aria-label="Close menu">
             <span></span><span></span>
           </button>
         </div>
@@ -65,30 +72,53 @@
 
     <!-- MAIN -->
     <main>
-      <!-- HOME / HERO -->
-      <section id="home" class="section">
+      <!-- HERO -->
+      <section id="home" class="section section-hero">
         <div class="grid hero">
           <div class="panel hero-panel">
             <div class="mini-row">
+              <span class="pill pill-soft">IT Student · Kerala, India</span>
               <span class="pill">Born: 21 May 2006</span>
               <span class="pill">Discord: mhmmd.shadil</span>
             </div>
 
-            <h1 class="title">Building clean digital experiences.</h1>
+            <h1 class="title">
+              Dark, minimal experiences<br />
+              crafted with intent.
+            </h1>
             <p class="lead">
-              A minimal, glassy portfolio built around what I actually do: design with Figma, craft tidy workflows
-              in Notion, and build solid community spaces with Discord servers—while keeping everything simple and usable.
+              Designing and organizing digital spaces that feel calm, sharp, and easy to live in—from Figma layouts and Notion systems to structured Discord communities people actually enjoy using.
             </p>
 
-            <div class="cta-row">
-              <a class="btn" href="#links">Open my links</a>
-              <a class="btn btn-secondary" href="#education">See education</a>
+            <div class="hero-cta-row">
+              <a class="btn btn-primary" href="#links">Open my links</a>
+              <a class="btn btn-ghost" href="#education">See education</a>
             </div>
           </div>
 
-          <div class="panel media-panel" aria-label="Hero visual">
-            <div class="media-wrap">
-              <img src="assets/hero.png" alt="Portfolio hero visual" loading="lazy" />
+          <div class="panel media-panel hero-media" aria-label="Hero visual">
+            <div class="hero-badge">
+              <span class="dot live"></span>
+              Available for collabs
+            </div>
+            <div class="hero-profile">
+              <div class="hero-avatar">
+                <img src="https://raw.githubusercontent.com/mhmmdshadil/portfolio-website/main/215467458.jpg" alt="Portrait of Muhammed Shadil" />
+              </div>
+              <div>
+                <div class="hero-name">Muhammed Shadil</div>
+                <div class="hero-role">IT Student · Systems & Visuals</div>
+              </div>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric">
+                <div class="metric-label">Typing speed</div>
+                <div class="metric-value">85 WPM</div>
+              </div>
+              <div class="metric">
+                <div class="metric-label">Core stack</div>
+                <div class="metric-value">Figma · Notion · Discord</div>
+              </div>
             </div>
           </div>
         </div>
@@ -97,26 +127,28 @@
       <!-- ABOUT -->
       <section id="about" class="section">
         <div class="section-head">
-          <h2 class="h2">About me</h2>
-          <p class="section-sub">A compact intro—designed to feel calm, modern, and straightforward.</p>
+          <h2 class="h2">About</h2>
+          <p class="section-sub">
+            A focused overview of what drives the work: calm interfaces, simple flows, and digital spaces that feel deliberate instead of noisy.
+          </p>
         </div>
 
         <div class="grid two">
-          <div class="panel">
-            <h3 class="h3">What I’m into</h3>
+          <div class="panel content-panel">
+            <h3 class="h3">What I do</h3>
             <p class="text">
-              I’m an IT student passionate about minimal design, clean interfaces, and
-              building small but meaningful digital tools. Whether I’m coding, designing
-              in Figma, or organizing workflows on Notion, I love turning simple ideas
-              into polished, aesthetic digital experiences that help teams and
-              communities work better.
+              As an IT student, the goal is to blend solid structure with visual clarity: layouts that look premium but still stay practical and light. Whether it is a Notion setup, a Discord server, or a simple landing page, the priority is always clean hierarchy, less clutter, and smooth interaction.
+            </p>
+            <p class="text">
+              Most of the work centers on dark, glassy interfaces with soft glows and clear typography, making them feel modern without being overwhelming.
             </p>
           </div>
-          <div class="panel">
+
+          <div class="panel content-panel">
             <h3 class="h3">Quick details</h3>
             <ul class="list">
               <li><span class="k">Name</span><span class="v">Muhammed Shadil</span></li>
-              <li><span class="k">Role</span><span class="v">IT Student</span></li>
+              <li><span class="k">Role</span><span class="v">Information Technology Student</span></li>
               <li><span class="k">Location</span><span class="v">Kerala, India</span></li>
               <li><span class="k">Email</span><span class="v">muhammedshadilmp7@gmail.com</span></li>
             </ul>
@@ -127,8 +159,10 @@
       <!-- SKILLS -->
       <section id="skills" class="section">
         <div class="section-head">
-          <h2 class="h2">Skills (what I can deliver)</h2>
-          <p class="section-sub">Practical abilities I use to ship clean, usable digital work.</p>
+          <h2 class="h2">Skills</h2>
+          <p class="section-sub">
+            Practical, everyday skills used to ship work that feels premium but stays minimal.
+          </p>
         </div>
 
         <div class="grid cards">
@@ -136,68 +170,87 @@
             <div class="card-top">
               <div class="card-icon">⌨️</div>
               <div>
-                <div class="card-title">Typing</div>
-                <div class="card-desc">Up to <b>85 WPM</b> (fast, accurate input for work flows).</div>
+                <div class="card-title">Typing & workflow</div>
+                <div class="card-desc">
+                  Up to <b>85 WPM</b> with low error rate, ideal for fast documentation, communication, and note-taking.
+                </div>
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="card-top">
               <div class="card-icon">🎨</div>
               <div>
                 <div class="card-title">Figma design</div>
-                <div class="card-desc">Poster & visual design with a minimal, clean finish.</div>
+                <div class="card-desc">
+                  Dark, minimal visuals with soft gradients, clean grids, and readable typography.
+                </div>
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="card-top">
               <div class="card-icon">🧩</div>
               <div>
-                <div class="card-title">Discord builds</div>
-                <div class="card-desc">Structured servers that feel organized and easy to use.</div>
+                <div class="card-title">Discord systems</div>
+                <div class="card-desc">
+                  Server structures that separate noise from signal, with clear channels, roles, and onboarding flows.
+                </div>
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="card-top">
               <div class="card-icon">📓</div>
               <div>
-                <div class="card-title">Notion systems</div>
-                <div class="card-desc">Clean pages and workflows for teams and projects.</div>
+                <div class="card-title">Notion workspaces</div>
+                <div class="card-desc">
+                  Task boards, dashboards, and hubs that keep projects aligned without overcomplicating them.
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- EDUCATION (from your provided image) -->
+      <!-- EDUCATION -->
       <section id="education" class="section">
         <div class="section-head">
           <h2 class="h2">Education</h2>
-          <p class="section-sub">Copied directly from your education card (no extra additions).</p>
+          <p class="section-sub">
+            A straightforward view of education history, arranged like a clean vertical timeline.
+          </p>
         </div>
 
         <div class="grid edu">
-          <div class="panel edu-panel">
+          <div class="panel edu-panel content-panel">
             <div class="edu-block">
-              <div class="edu-label">Education</div>
+              <div class="edu-label">Path</div>
+
               <div class="edu-item">
+                <div class="edu-year-pill">2025 – Present</div>
                 <div class="edu-title">GOVT. ENGINEERING COLLEGE SREEKRISHNAPURAM</div>
-                <div class="edu-line">Information Technology · <span class="muted">2025–Present</span></div>
+                <div class="edu-line">Bachelor in Information Technology</div>
               </div>
+
               <div class="edu-item">
+                <div class="edu-year-pill">2023 – 2024</div>
                 <div class="edu-title">GHSS PURATHUR</div>
-                <div class="edu-line">Biology Science · <span class="muted">2023–2024</span></div>
+                <div class="edu-line">Biology Science</div>
               </div>
+
               <div class="edu-item">
+                <div class="edu-year-pill">Up to 2022</div>
                 <div class="edu-title">TIC SECONDARY SCHOOL</div>
-                <div class="edu-line">School Level Education · <span class="muted">2022 Graduate</span></div>
+                <div class="edu-line">School Level Education · 2022 Graduate</div>
               </div>
             </div>
           </div>
 
-          <div class="panel media-panel" aria-label="Education card">
+          <div class="panel media-panel">
             <div class="media-wrap">
               <img src="assets/education.png" alt="Education card" loading="lazy" />
             </div>
@@ -209,32 +262,39 @@
       <section id="links" class="section">
         <div class="section-head">
           <h2 class="h2">Links</h2>
-          <p class="section-sub">Everything you can use to reach me or see my work.</p>
+          <p class="section-sub">
+            Places where the work lives, plus ways to get in touch.
+          </p>
         </div>
 
         <div class="grid links">
           <a class="link-card" href="https://github.com/mhmmdshadil" target="_blank" rel="noopener noreferrer">
             <div class="link-title">GitHub</div>
-            <div class="link-desc">Code profile and repositories.</div>
+            <div class="link-desc">Code, experiments, and repositories.</div>
           </a>
+
           <a class="link-card" href="https://www.linkedin.com/in/mhmmdshadil/" target="_blank" rel="noopener noreferrer">
             <div class="link-title">LinkedIn</div>
             <div class="link-desc">Professional profile and updates.</div>
           </a>
+
           <a class="link-card" href="https://www.instagram.com/mhmmd.shadil/" target="_blank" rel="noopener noreferrer">
             <div class="link-title">Instagram</div>
-            <div class="link-desc">Personal updates (as shared by you).</div>
+            <div class="link-desc">Snapshots and personal updates.</div>
           </a>
-          <button class="link-card" id="copyEmail" type="button">
+
+          <button class="link-card link-card-ghost" id="copyEmail" type="button">
             <div class="link-title">Email</div>
-            <div class="link-desc">muhammedshadilmp7@gmail.com (tap to copy)</div>
+            <div class="link-desc">muhammedshadilmp7@gmail.com · tap to copy</div>
           </button>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-line">© <span id="year"></span> Muhammed Shadil · Minimal + glassy UI</div>
+      <div class="footer-line">
+        © <span id="year"></span> Muhammed Shadil · Dark, minimal portfolio
+      </div>
     </footer>
   </div>
 
