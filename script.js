@@ -12,14 +12,18 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   function setActive(hash) {
-    navLinks.forEach(l => l.classList.toggle("active", l.getAttribute("href") === hash));
+    navLinks.forEach((l) =>
+      l.classList.toggle("active", l.getAttribute("href") === hash)
+    );
   }
 
   // On load (if linking directly)
   setActive(window.location.hash || "#home");
 
   // Smooth active state on click
-  navLinks.forEach(l => l.addEventListener("click", () => setActive(l.getAttribute("href"))));
+  navLinks.forEach((l) =>
+    l.addEventListener("click", () => setActive(l.getAttribute("href")))
+  );
 
   // Mobile menu open/close
   function openMenu() {
@@ -31,24 +35,31 @@
     menuBtn.setAttribute("aria-expanded", "false");
   }
 
-  menuBtn.addEventListener("click", openMenu);
-  closeMenu.addEventListener("click", closeMenuFn);
+  if (menuBtn) menuBtn.addEventListener("click", openMenu);
+  if (closeMenu) closeMenu.addEventListener("click", closeMenuFn);
 
   // Close on link tap (mobile)
-  mobileLinks.forEach(l => l.addEventListener("click", () => {
-    closeMenuFn();
-    setActive(l.getAttribute("href"));
-  }));
+  mobileLinks.forEach((l) =>
+    l.addEventListener("click", () => {
+      closeMenuFn();
+      setActive(l.getAttribute("href"));
+    })
+  );
 
-  // Copy email (your provided email)
+  // Copy email
   if (copyEmail) {
     copyEmail.addEventListener("click", async () => {
       try {
         await navigator.clipboard.writeText("muhammedshadilmp7@gmail.com");
-        copyEmail.textContent = "Email copied ✓";
-        setTimeout(() => { copyEmail.innerHTML = "<div class='link-title'>Email</div><div class='link-desc'>muhammedshadilmp7@gmail.com (tap to copy)</div>"; }, 1200);
+        copyEmail.classList.add("copied");
+        copyEmail.querySelector(".link-desc").textContent = "Email copied ✓";
+        setTimeout(() => {
+          copyEmail.classList.remove("copied");
+          copyEmail.querySelector(".link-desc").textContent =
+            "muhammedshadilmp7@gmail.com · tap to copy";
+        }, 1400);
       } catch (e) {
-        // Fallback: do nothing noisy; user can still read it on screen
+        // Silent fallback
       }
     });
   }
