@@ -1,0 +1,14 @@
+  ▲ Next.js 14.2.21
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.5s (1290 modules)
+ HEAD / 200 in 6916ms
+ ✓ Compiled in 558ms (636 modules)
+ GET / 200 in 337ms
+ GET / 200 in 53ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 685ms (1252 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 939ms
