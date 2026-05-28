@@ -19,7 +19,7 @@
 
 <br/>
 
-## ✦ The Aesthetic
+## ✦ The Aesthetics
 
 This portfolio is built with a **cinematic documentary style**, designed to feel like a high-end editorial piece. 
 
